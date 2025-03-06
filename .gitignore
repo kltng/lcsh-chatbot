@@ -12,3 +12,5 @@ wheels/
 # Ignore all files in the following directories
 .cursor
 .ref
+
+build_prompt.md
