@@ -1,0 +1,22 @@
+[project]
+name = "lcsh-chatbot"
+version = "0.1.0"
+description = "LCSH Assistant - A tool for suggesting Library of Congress Subject Headings"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.32.0",
+    "google-genai>=0.1.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "pillow>=10.2.0",
+    "python-docx>=1.1.0",
+    "pypdf>=4.0.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
